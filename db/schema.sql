@@ -1,0 +1,14 @@
+
+
+CREATE DATABASE burgers_db;
+USE burgers_db;
+
+
+
+CREATE TABLE burgers
+(
+	id INTEGER(5) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	burger_name varchar(255),
+	devoured BOOLEAN DEFAULT false,
+	date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
